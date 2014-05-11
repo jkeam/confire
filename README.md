@@ -53,21 +53,23 @@ confire new_project_name
 ## Files it copies in
 You will see a lot of files get dumped into your project directory.  Don't worry, they each have a purpose.  You shouldn't ever need to edit let alone open any of the files other than config.yml and custom_processor.rb.
 
-1.  config.yml - Used to set properties such as what file to read in, how many lines in a given test case and log info
+1.  README.txt - a very quick readme to get up and running quickly.
 
-2.  Gemfile - List of debugging and some formatting gems.
+2.  config.yml - Used to set properties such as what file to read in, how many lines in a given test case and log info
 
-3.  Rakefile - Rakefile with 'rake test' already set up.
+3.  Gemfile - List of debugging and some formatting gems.
 
-4.  custom_processor.rb - This is where you will put your work.  There are two main methods to overload here, one to process a given test case and one to process each line.  Read the comments in this file for a detailed explaination.  Feel free to add other classes you need and require them here.
+4.  Rakefile - Rakefile with 'rake test' already set up.
 
-5.  spec - Contains a generic tests for the custom_processor.rb.  Expand as you need of course.
+5.  custom_processor.rb - This is where you will put your work.  There are two main methods to overload here, one to process a given test case and one to process each line.  Read the comments in this file for a detailed explaination.  Feel free to add other classes you need and require them here.
 
-6.  input_sample.txt - Dummy sample file that you need to override (or simply point to a new one in the config.yml)
+6.  spec - Contains a generic tests for the custom_processor.rb.  Expand as you need of course.
 
-7.  driver.rb - The main ruby script invoked by the run.  This ties your custom_processor to the rest of the code that is parsing the input file.
+7.  input_sample.txt - Dummy sample file that you need to override (or simply point to a new one in the config.yml)
 
-8.  run.sh - Script used to invoke everything (will run the main which will invoke the processor).  Simply call without passing in any args.
+8.  driver.rb - The main ruby script invoked by the run.  This ties your custom_processor to the rest of the code that is parsing the input file.
+
+9.  run.sh - Script used to invoke everything (will run the main which will invoke the processor).  Simply call without passing in any args.
 ```shell
 ./run.sh
 ```
