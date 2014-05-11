@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'confire'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2014-05-11'
   s.summary     = "Very easy project setup for google codejam problems"
   s.description = "Setups the necessary classes and tests for a codejam solution."
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files       = ["lib/confire.rb", "lib/confire/project_creator.rb",
     "lib/confire/templates/Gemfile", "lib/confire/processor.rb",
     "lib/confire/templates/driver.rb", "lib/confire/templates/custom_processor.rb",
-    "lib/confire/main.rb", "lib/confire/templates/Rakefile",
+    "lib/confire/main.rb", "lib/confire/templates/Rakefile", "lib/confire/templates/README.txt",
     "Rakefile", "spec", "spec/processor_spec.rb",
     "lib/confire/templates/spec", "lib/confire/templates/spec/custom_processor_spec.rb",
     "lib/confire/parser.rb", "lib/confire/templates/config.yml",
