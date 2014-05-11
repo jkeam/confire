@@ -1,4 +1,4 @@
-require_relative 'confire/project_creator'
+require "confire/project_creator"
 class Confire
   def initialize(project_name)
     project_creator = ProjectCreator.new

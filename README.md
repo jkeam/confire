@@ -1,4 +1,5 @@
 # Confire
+*Still unstable!  I am changing a lot of things so use at your own risk.*
 
 ## Purpose
 Very simple project preparer for google codejam.  This will evolve over time.  This is just something I'm throwing together to avoid the dirty work of project setup everytime.

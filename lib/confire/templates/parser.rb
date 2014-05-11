@@ -8,6 +8,7 @@ class Parser
   def initialize(options = {})
     @filename = options[:filename]
     @lines_per_test_case = options[:lines_per_test_case] || 1
+    @logger = options[:logger]
   end
 
   # This will read a given test case and pass that into the test_case_processor.
