@@ -14,9 +14,25 @@ class Confire
       lines_per_test_case = config['lines_per_test_case']
 
       # setup logger
-      logger = Logger.new 'application_logger'
+      log_name = options[:log_name] || 'application'
+      logger = Logger.new log_name
+      log_level = 0
+      case config['log_level'].to_sym
+      when :debug
+        log_level = Log4r::DEBUG
+      when :info
+        log_level = Log4r::INFO
+      when :warn
+        log_level = Log4r::WARN
+      when :error
+        log_level = Log4r::ERROR
+      when :fatal
+        log_level = Log4r::FATAL
+      else
+        log_level = 0
+      end if config['log_level']
+      logger.level = log_level
       logger.outputters = Outputter.stdout
-      logger.level = config['log_level']
       @logger = logger
 
       # setup parser

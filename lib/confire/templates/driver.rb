@@ -1,7 +1,7 @@
 require 'confire/main'
-require_relative 'custom_parser'
+require_relative 'custom_processor'
 
 options = {
-  custom_parser: CustomParser.new
+  custom_processor: CustomProcessor.new
 }
 Confire::Main.new(options).run
