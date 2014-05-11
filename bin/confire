@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+require 'confire'
+
+def usage
+  puts 'usage: confire [project_name]'
+end
+
+if ARGV.length == 1
+  # test to see if that dir exists already
+  project_name = ARGV[0]
+  unless File.directory?(project_name)
+    confire = Confire.new project_name
+  else
+    puts 'Please choose another project name as that directory already exists'
+    usage
+  end
+else
+  puts 'Wrong number of arguments'
+  usage
+end
