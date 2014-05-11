@@ -22,20 +22,25 @@ gem install confire
 confire new_project_name
 cd new_project_name
 
-# setup config.yml
+# modify config.yml
 # modify custom_processor.rb
 
 ./run.sh
 ```
 
+## Key Files
+To make this work for you, and as alluded to in the Usage section, there are two main files you need to edit.
+
+1. config.yml
+2. custom_processor.rb
+
 ### Configs
-There are a few configs you can edit:
+This is an explaination of the configs you can update in the config.yml.
 
 1. filename - the input filename to process
 2. lines_per_test_case - how many lines count as 1 test case
 3. log_level - the log level you want as a quoted string (debug, info, warn, error, fatal)
 4. log_name - optional name you want to see in the log. deleting this prop defaults it to 'application'
-
 
 ### Custom Processor
 This is where the logic of processing go.  Greater detail can be found as comments in the custom_processor.rb file itself.
