@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.executables << 'confire'
   s.files       = ["lib/confire.rb", "lib/confire/project_creator.rb",
-    "lib/confire/templates/Gemfile",
+    "lib/confire/templates/Gemfile", "lib/confire/templates/processor.rb",
     "lib/confire/templates/main.rb", "lib/confire/templates/Rakefile",
     "lib/confire/templates/spec", "lib/confire/templates/spec/processor_spec.rb",
     "lib/confire/templates/parser.rb", "lib/confire/templates/config.yml",

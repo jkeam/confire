@@ -4,4 +4,7 @@ class Confire
     project_creator = ProjectCreator.new
     project_creator.create project_name
   end
+  def self.root
+    File.dirname __dir__
+  end
 end
