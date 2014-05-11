@@ -32,30 +32,40 @@ rake test
 Get this gem from rubygems and once installed, use it to generate a new project.
 
 ```shell
-# creates new project and copies some files in
+# install the tool
+gem install confire
+
+# create a new project
 confire new_project_name
+cd new_project_name
 
-# setup the configs in the config.yml
-  #filename: input_sample.txt - the filename to process
-  #lines_per_test_case: 2 - how many lines count as 1 test case
-
-  #log_level: 'debug' - the log level you want.  right now only logs to console.
-  #log_name: 'application' - optional name you want to see in the log. deleting this prop defaults it to 'application'
-
-# implement both methods in the custom_processor.rb
-  # process_testcase - put the logic of processing the test case here
-  # process_line     - put the logic of formatting each line here
+# setup config.yml
+# modify custom_processor.rb
 
 # run everything
 ./run.sh
 ```
 
-## Files it copies in
+### Configs
+There are a few configs you can edit:
+1.  filename - the input filename to process
+2.  lines_per_test_case - how many lines count as 1 test case
+3.  log_level - the log level you want as a quoted string (debug, info, warn, error, fatal)
+4.  log_name - optional name you want to see in the log. deleting this prop defaults it to 'application'
+
+
+### Custom Processor
+This is where the logic of processing go.  Greater detail can be found as comments in the custom_processor.rb file itself.
+1.  process_testcase - put the logic of processing each test case here
+2.  process_line     - put the logic of formatting each line here
+
+
+## Project Files
 You will see a lot of files get dumped into your project directory.  Don't worry, they each have a purpose.  You shouldn't ever need to edit let alone open any of the files other than config.yml and custom_processor.rb.
 
 1.  README.txt - a very quick readme to get up and running quickly.
 
-2.  config.yml - Used to set properties such as what file to read in, how many lines in a given test case and log info
+2.  config.yml - Used to set configs, explained above.
 
 3.  Gemfile - List of debugging and some formatting gems.
 
