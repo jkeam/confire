@@ -1,13 +1,13 @@
 Gem::Specification.new do |s|
   s.name        = 'confire'
-  s.version     = '0.0.1'
+  s.version     = '0.0.3'
   s.date        = '2014-05-11'
   s.summary     = "Very easy project setup for google codejam problems"
   s.description = "Setups the necessary classes and tests for a codejam solution."
   s.authors     = ["Jon Keam"]
   s.email       = 'jpkeam@gmail.com'
   s.files       = ["lib/confire.rb"]
-  s.homepage    = 'http://rubygems.org/gems/confire'
+  s.homepage    = 'https://github.com/jkeam/confire'
   s.license     = 'MIT'
   s.executables << 'confire'
   s.files       = ["lib/confire.rb", "lib/confire/project_creator.rb",
