@@ -1,9 +1,9 @@
 require "minitest/autorun"
-require_relative '../processor'
+require 'confire/processor'
 
-describe Processor do
+describe Confire::Processor do
   before do
-    @processor = Processor.new
+    @processor = Confire::Processor.new
   end
 
   describe "when asked to process a test case" do
