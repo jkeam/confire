@@ -11,7 +11,7 @@ As far as I see it, this gem is nice in that it generates a project directory wi
   If you've never used it, its a great tool.  All you have to do is write: *binding.pry* anywhere in your code (think gdb) and you get a nice breakpoint.  [Binding.pry cheatsheet](https://gist.github.com/lfender6445/9919357)
 Don't forget to install the gems with the command *bundle install*
 2. Rakefile - will run everything in the generated spec folder automatically.  There is already included an example test that you can overwrite.  Run the tests with the command *rake test*
-3. custom_processor.rb - The main purpose of the google codejam is the algorithm.  Anything else you have to do is unnecessary time wasting setup.  There are other gems out there that try and accomplish the same thing, but I wanted something even simpler.  Where I didn't have to write ANY ceremony, I could merely set some properties, implement the methods I needed and be done.  That is exactly what this gem does.  See the Usage section to see what I mean.
+3. custom_processor.rb - The main purpose of the google codejam is the algorithm.  Anything else you have to do is unnecessary time wasting setup.  There are other gems out there that try and accomplish the same thing, but I wanted something even simpler.  Where I didn't have to write anything extra, I could merely set some properties, implement the methods I needed and be done.  That is exactly what this gem does.  See the Usage section to see what I mean.
 
 
 ## Usage
