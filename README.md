@@ -10,7 +10,7 @@ Get this gem from rubygems and once installed, use it to generate a new project.
 # creates new project and copies some files in
 confire new_project_name
 
-# implement both methds in the processor.rb
+# implement both methods in the processor.rb
 
 # run everything
 ./run.sh
