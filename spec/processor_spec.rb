@@ -1,5 +1,4 @@
-require "minitest/autorun"
-require 'confire/processor'
+require 'test_helper'
 
 describe Confire::Processor do
   before do

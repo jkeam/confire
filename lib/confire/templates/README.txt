@@ -20,8 +20,8 @@ There are two methods you need to implement.
   process_testcase    put the logic of processing the test case here
   process_line        put the logic of formatting each line here
 
-If you need, add 'binding.pry' to get gdb like debugging.  Great cheatsheet:
-https://gist.github.com/lfender6445/9919357
+If you need, add 'byebug' to get gdb like debugging.  Great cheatsheet:
+http://fleeblewidget.co.uk/2014/05/byebug-cheatsheet/
 
 4.  Write tests
 Check out the stuff in the spec folder to see some examples.  To run your tests run:

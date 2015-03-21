@@ -1,4 +1,4 @@
-require 'pry'
+require 'byebug'
 class CustomProcessor
   # Logger setup in config.yml
   attr_accessor :logger
