@@ -1,4 +1,6 @@
 # Confire
+[![Build Status](https://travis-ci.org/jkeam/confire.svg?branch=master)](https://travis-ci.org/jkeam/confire)
+
 *Somewhat stable.  Let me know if you find any issues.*
 
 ## Environment
