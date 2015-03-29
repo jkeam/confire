@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'confire'
-  s.version     = '0.1.2'
+  s.version     = '0.1.3'
   s.date        = '2015-03-21'
   s.summary     = "Very easy project setup for google codejam problems"
   s.description = "Setups the necessary classes and tests for a codejam solution."
